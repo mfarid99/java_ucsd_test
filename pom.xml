@@ -64,7 +64,7 @@
     <poi-ooxml.version>3.15</poi-ooxml.version>
     <restassured.version>2.9.0</restassured.version>
     <runner-microservice.version>1.0.2</runner-microservice.version>
-    <runtime-microservice.version>1.0.23</runtime-microservice.version>
+    <runtime-microservice.version>1.0.35</runtime-microservice.version>
     <sauce-connect-plugin.version>2.1.8</sauce-connect-plugin.version>
     <selenium.version>3.14.0</selenium.version>
     <skip.profile>true</skip.profile>
@@ -110,11 +110,11 @@
       <artifactId>json-path</artifactId>
       <version>${restassured.version}</version>
     </dependency>
-    <dependency>
-      <groupId>com.oracle</groupId>
-      <artifactId>ojdbc6</artifactId>
-      <version>${com.oracle.ojdbc6.version}</version>
-    </dependency>
+    <!--        <dependency>-->
+    <!--          <groupId>com.oracle</groupId>-->
+    <!--          <artifactId>ojdbc6</artifactId>-->
+    <!--          <version>${com.oracle.ojdbc6.version}</version>-->
+    <!--        </dependency>-->
     <dependency>
       <groupId>com.pacificwebconsulting.assertion</groupId>
       <artifactId>assertion-microservice</artifactId>
@@ -309,19 +309,19 @@
       </plugins>
     </pluginManagement>
     <plugins>
-      <!--<plugin>-->
-      <!--<groupId>net.revelc.code.formatter</groupId>-->
-      <!--<artifactId>formatter-maven-plugin</artifactId>-->
-      <!--<version>${format-maven-plugin.version}</version>-->
-      <!--<executions>-->
-      <!--<execution>-->
-      <!--<goals>-->
-      <!--<goal>validate</goal>-->
-      <!--</goals>-->
-      <!--<phase>verify</phase>-->
-      <!--</execution>-->
-      <!--</executions>-->
-      <!--</plugin>-->
+      <!--      <plugin>-->
+      <!--        <groupId>net.revelc.code.formatter</groupId>-->
+      <!--        <artifactId>formatter-maven-plugin</artifactId>-->
+      <!--        <version>${format-maven-plugin.version}</version>-->
+      <!--        <executions>-->
+      <!--          <execution>-->
+      <!--            <goals>-->
+      <!--              <goal>validate</goal>-->
+      <!--            </goals>-->
+      <!--            <phase>verify</phase>-->
+      <!--          </execution>-->
+      <!--        </executions>-->
+      <!--      </plugin>-->
       <plugin>
         <groupId>com.github.ekryd.sortpom</groupId>
         <artifactId>sortpom-maven-plugin</artifactId>
@@ -571,7 +571,7 @@
                 <phase>install</phase>
                 <configuration>
                   <argLine>-Dfile.encoding=UTF-8</argLine>
-                  <test>${test.name}</test>
+                  <!--                  <test>${test.name}</test>-->
                   <includes>
                     <include>**/*Test.java</include>
                     <include>**/Test*.java</include>
@@ -709,7 +709,7 @@
                 <phase>install</phase>
                 <configuration>
                   <argLine>-Dfile.encoding=UTF-8</argLine>
-                  <groups>${test.group}</groups>
+                  <!--                  <groups>${test.group}</groups>-->
                   <excludedGroups>inProgressTest,manualTest</excludedGroups>
                   <parallel>methods</parallel>
                   <parallelOptimized>true</parallelOptimized>
