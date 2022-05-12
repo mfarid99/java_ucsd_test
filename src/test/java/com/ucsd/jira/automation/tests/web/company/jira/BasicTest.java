@@ -38,6 +38,8 @@ public class BasicTest extends JiraTestCase {
         webAction(Constants.DASHBOARD_DIV);
 
         redirect(Constants.HOME_URL);
+        GIVEN("I am filtered out");
+        webElementVisible(Constants.NEW_NAME);
 
     }
 

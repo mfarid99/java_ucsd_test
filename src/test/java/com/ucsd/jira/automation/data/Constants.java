@@ -7,7 +7,9 @@ public final class Constants {
     public static final int MAX_WEB_SERVICE_RESPONSE_TIME = 3000;
 
     // COMMON URLs
-    public static final String HOME_URL = "/MyJiraHome.jspa";
+//    public static final String HOME_URL = "/MyJiraHome.jspa";
+    public static final String HOME_URL = "/jira/filters";
+
 
     // HEADING Elements
     public static final String LOGO_HEADING = "//h1[@id='logo']";
@@ -55,6 +57,7 @@ public final class Constants {
     public static final String ISSUES_AND_FILTERS_DIV = "//*[@id=\"ak-jira-navigation\"]/header/nav/div[2]/div[2]/div/button";
     public static final String DASHBOARD_DIV = "//*[@id=\"jira\"]/div[17]/div[2]/div/span/div/div/div[2]/span/a";
     public static final String PROJECTS_DIV = "//*[@id=\"jira-frontend\"]/div[1]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[2]/a/div[2]/div";
+    public static final String NEW_NAME = "//*[@id=\"ak-main-content\"]/div/div/div[2]/div/table/thead/tr/th[2]";
 
     private Constants() {
     }
