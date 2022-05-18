@@ -9,6 +9,8 @@ public final class Constants {
     // COMMON URLs
 //    public static final String HOME_URL = "/MyJiraHome.jspa";
     public static final String HOME_URL = "/jira/filters";
+    public static final String MAIN_URL = "/jira/dashboards/last-visited";
+    public static final String PEOPLE_URL = "/jira/people/search";
 
 
     // HEADING Elements
@@ -53,11 +55,16 @@ public final class Constants {
     public static final String BOARDS_SEARCH_PREVIEW_DIV = "//div[@aria-label='Boards']";
     public static final String PROJECTS_SEARCH_PREVIEW_DIV = "//div[@aria-label='Projects']";
 
-    //more button 3rd assertion
+    //Projects Button 3rd assertion
     public static final String ISSUES_AND_FILTERS_DIV = "//*[@id=\"ak-jira-navigation\"]/header/nav/div[2]/div[2]/div/button";
-    public static final String DASHBOARD_DIV = "//*[@id=\"jira\"]/div[17]/div[2]/div/span/div/div/div[2]/span/a";
+    public static final String DASHBOARD_DIV = "//*[@id=\"jira\"]/div[17]/div[3]/div/span/div/div/div[2]/span/a";
     public static final String PROJECTS_DIV = "//*[@id=\"jira-frontend\"]/div[1]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[2]/a/div[2]/div";
     public static final String NEW_NAME = "//*[@id=\"ak-main-content\"]/div/div/div[2]/div/table/thead/tr/th[2]";
+    public static final String CREATE_FILTER = "//*[@id=\"ak-main-content\"]/div/div/div[1]/div[1]/div[2]/div/a";
+    public static final String OPEN_ISSUE = "//*[@id=\"ak-side-navigation\"]/div/div[1]/div/nav/div[2]/div/div/div[2]/a[4]";
+    public static final String OPEN_ISSUES_HEADER = "//*[@id=\"search-header-view\"]/div";
+    public static final String LOGOUT_BUTTON = "//*[@id=\"logout-submit\"]";
+    public static final String ADD_PEOPLE = "//*[@id=\"ak-main-content\"]/div/div/div/div/div/div[1]/header/div[1]/div/div[3]/button";
 
     private Constants() {
     }
